@@ -50,3 +50,7 @@ article:hover {
   box-sizing: border-box !important;
   width: 100%;
 }
+
+.title, .subtitle{
+  font-weight: 300;
+}
