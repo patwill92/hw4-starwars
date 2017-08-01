@@ -76,10 +76,11 @@ $(function () {
       if (enemyLife <= 0) {
         if (!$('.enemies .columns .column')[0]) {
           alert('YOU WIN!');
+          gameOver = true;
           $('.my-char .title').append(restartBtn);
           $('.restart').on('click', () => {
             location.reload();
-          })
+          });
         } else {
           $(`#${enemy}`).remove();
           var newEnemy = $('.enemies .columns .column')[0].id;
